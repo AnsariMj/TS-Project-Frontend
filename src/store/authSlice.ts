@@ -47,7 +47,7 @@ export const { setUser, setStatus } = authSlice.actions
 export default authSlice.reducer
 
 
-export function regiter(data: RegisterData) {
+export function register(data: RegisterData) {
     return async function registerThunk(dispatch: any) {
         dispatch(setStatus('loading'));
         try {
